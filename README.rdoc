@@ -1,0 +1,5 @@
+== Zombie Rails on Unicorn
+
+Capture and ignore signals to prevent normal Unicron process handling from
+working. This allows reproducing badly behaved or stuck processes via deploy
+scripts. The only thing that should allow this app to die is `kill -9`.
